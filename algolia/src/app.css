@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+{
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+
+body {
+  min-height: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  overflow-y: scroll;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  background: #f0f2f5;
+  flex-direction: column;
+}
+
+h1 {
+	padding-top: 20px;
+}
+
+.search-container {
+  flex-grow: 1;
+  display: flex;
+  width: 960px;
+  min-height: 100%;
+  margin: 0 auto;
+   width: 100%;
+}
+
+
+.left-panel {
+    flex: 0 0 10%;
+    top: -120px;
+    position: relative;
+}
+
+.facet {
+  margin-right: 24px;
+  padding: 8px 0;
+}
+
+a {
+  color: #000000;
+  display: none;
+}
+
+em {
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+header {
+    position: relative;
+}
+
+mark {
+    background-color: yellow;
+    font-weight: bold;
+	color: #ff0000;
+	font-size: 1.5rem;
+}
+
+.hit-content {
+	font-size: 1.5rem;
+}
+.hit-name {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.hit-image {
+	position: relative;
+	width: fit-content;
+}
+
+.hit-image:hover {
+    opacity: 1;
+    transform: scale(1.5, 1.5);
+
+}
+
+.ais-Hits {
+	color: #000000;
+	padding: 40px 40px;
+}
+.ais-Hits-item, .ais-InfiniteHits-item, .ais-InfiniteResults-item, .ais-Results-item {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    width: calc(25% - 10rem);
+    border: none;
+    box-shadow: none;
+}
+
+.ais-SearchBox {
+  flex-grow: 1;
+  min-height: 100%;
+  margin: 0 auto;
+  width: 40%;
+  padding-top: 40px;
+}
+
+#grape-vine{
+	top: 0;
+    right: 0vw;
+    position: absolute;
+}
+
+#grapes {
+    width: 50%;
+}
+
+#excellent {
+	width: 8%;
+}
+.ais-SearchBox-input{
+	border: 3px solid #800000;
+	padding-top: 10px;
+	padding: 5px 10px;
+	font-style: italic;
+	font-size: 30px;
+	border-radius: 20px;
+}
+
+.ais-SearchBox-submit {
+    width: 30px;
+    height: 30px;
+    left: auto;
+}
+
+.ais-SearchBox-submitIcon {
+    width: 50px;
+    height: 50px;
+    padding-right: 1rem;
+}
+
+.ais-SearchBox-resetIcon {
+    display: none;
+}
+
+.ais-Stats{
+	font-weight: bold;
+	margin-top: 25px;
+	
+}
+
+.ais-Stats-text{
+    font-size: 20px;
+}
+
+#wine-logo {
+    left: 0;
+    width: 75%;
+}
+
+#sort-by{
+	padding-top: 20px;
+}
+
+.ais-SortBy-select {
+	font-size: 25px;
+}
+
+.hit-price {
+  margin-right: 24px;
+  padding: 8px 0;
+  font-weight: bold;
+}
+
+.ais-RangeSlider .rheostat-handle {
+    border: 2px solid #791706;
+    width: 30px;
+    height: 30px;
+}
+
+.ais-RangeSlider .rheostat {
+  margin: 32px 32px;
+}
+
+.rheostat-tooltip {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.ais-RangeSlider 
+ .rheostat-horizontal 
+ .rheostat-progress {
+    height: 10px;
+    top: 3px;
+    background: #d60a0a;
+}
+
+.rheostat-marker {
+  display: none;
+}
+
+.ais-RangeSlider--body {
+  padding: 0 11px 0 16px;
+}
+
+.ais-RangeSlider .rheostat-horizontal .rheostat-background {
+  height: 3px;
+  top: 2px;
+  width: 100%;
+  background-color: #ddd;
+}
+
+.ais-RangeSlider--tooltip {
+  background: transparent;
+}
+
+.ais-Menu .ais-Menu-link .ais-Menu-label {
+	color: #000000;
+	font-size: 25px;
+	padding-right: 20px;
+}
+
+.ais-Menu-count{
+	font-size: 1rem;
+}
+
+.ais-Menu-list{
+	padding-left: 25px;
+}
+
+.ais-Pagination-list {
+    position: absolute;
+    left: 45%;
+}
+
+.ais-Pagination-link{
+	color: #791706;
+	font-size: 2rem;
+	margin-right: .7rem;
+	line-height: 50px;
+}
+
+.ais-Pagination-item--selected .ais-Pagination-link {
+    color: #fff;
+    background-color: #d60a0a;
+    border-color: #791706;
+}

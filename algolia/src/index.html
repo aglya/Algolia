@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header>
+    <div id="search-box"></div>
+    <div id="grape-vine"><img id="grapes" src="resources/grape-vine.png"></div>	
+  </header>
+
+  <main class="search-container">
+    <div class="left-panel">
+    	<div id="logo">
+    		<img id="wine-logo" src="resources/wine_logo.png">
+    		<a href="http://www.freepik.com">Designed by vectorpocket / Freepik</a>
+    	</div>
+    	<h1>Year</h1>
+	  	<div class="facet" id="year"></div>
+	  	<h1>Price</h1>
+	  	<div class="facet" id="price"></div>
+	    <h1>Type</h1>
+	  	<div class="facet" id="type"></div>
+    </div>
+  	<div class="right-panel">
+  	  <div id="sort-by"></div>
+  	  <div id="stats"></div>
+      <div id="hits"></div>
+      <div id="pagination"></div>
+     </div>
+  </main>
+
+  <script type="text/html" id="hit-template">
+    <div class="hit">
+      <p class="hit-name">
+        {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
+        {{#helpers.highlight}}{ "attribute": "type" }{{/helpers.highlight}}
+        {{#helpers.highlight}}{ "attribute": "year" }{{/helpers.highlight}}
+        {{#helpers.highlight}}{ "attribute": "domain" }{{/helpers.highlight}}
+      </p>
+    </div>
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.33.0/dist/algoliasearchLite.min.js" integrity="sha256-3Laj91VXexjTlFLgL8+vvIq27laXdRmFIcO2miulgEs=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.4.0/dist/instantsearch.production.min.js" integrity="sha256-pM0n88cBFRHpSn0N26ETsQdwpA7WAXJDvkHeCLh3ujI=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
