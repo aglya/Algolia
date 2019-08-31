@@ -19,7 +19,7 @@ I wanted to add further personalization by modifying the search bar to include a
 A record is an object which you want to search and can comprise of various properties. These records need to be indexed by collecting, parsing, and storing the data in order to quickly retrieve them when queried for.
 
 ## Question 2
-Unfortunately, I did not use the dashboard for this assignment so I am not as familiar with it as with the back-end APIs that I used. But as an attempt to answer Matt's question, I would assume that the dashboard may be versioned and he can therefore, revert to an older version. I'm unfamiliar with what the dashboard used to look like, but in the current one, I can simply go to Indices -> <Pick index> -> Manage Index -> Delete.
+Unfortunately, I did not use the dashboard for this assignment so I am not as familiar with it as with the back-end APIs that I used. But as an attempt to answer Matt's question, I would assume that the dashboard may be versioned and he can therefore, revert to an older version. I'm unfamiliar with what the dashboard used to look like, but in the current one, I can simply go to Indices -> "Pick index" -> Manage Index -> Delete.
 
 ## Question 3
 No, it is not a lot of work. The process is highly tailored to your needs and skill level. You can use the provided dashboard UI to create an index for your data, add your data, and let Algolia's magic do the work. Alternitavely, you can connect to Algolia APIs on the back-end using a variety of supported programming languages. Algolia does all of the processing for you. After that, it's up to you how many rules and restrictions you want to add to your searches!
